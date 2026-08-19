@@ -1,10 +1,10 @@
 import TrackList from "./TrackList";
 
-function SearchResults () {
+function SearchResults (props) {
     return (
         <div className="search-results">
             <h2>Search Results</h2>
-            <TrackList />
+            <TrackList tracks={props.searchResults}/>
         </div>
     );
 }

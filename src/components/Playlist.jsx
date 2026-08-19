@@ -1,10 +1,10 @@
 import TrackList from "./TrackList";
 
-function Playlist () {
+function Playlist (props) {
     return (
         <div className="playlist">
             <h2>Playlist</h2>
-            <TrackList />
+            <TrackList tracks={props.playlistTracks}/>
         </div>
     );
 }
