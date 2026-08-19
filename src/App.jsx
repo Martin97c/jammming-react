@@ -4,6 +4,8 @@ import Playlist from './components/Playlist'
 import './App.css'
 
 function App() {
+  const playlistName = "My Playlist";
+
   const playlistTracks = [
     {
       id: 4,
@@ -38,7 +40,10 @@ function App() {
       <h1>Jammming</h1>
       <SearchBar />
       <SearchResults searchResults={searchResults}/>
-      <Playlist playlistTracks={playlistTracks}/>
+      <Playlist
+        playlistName={playlistName}
+        playlistTracks={playlistTracks}
+      />
     </div>
   );
 }
